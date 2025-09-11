@@ -1,9 +1,9 @@
- apiVersion: argoproj.io/v1alpha1
- kind: Application
- metadata:
-      name: iko
-      namespace: argocd
- spec:
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+    name: iko
+    namespace: argocd
+spec:
     destination:
         namespace: isc
         server: https://kubernetes.default.svc
