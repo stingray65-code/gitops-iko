@@ -30,4 +30,17 @@ spec:
             runAsGroup: 51773
             runAsNonRoot: true
             runAsUser: 51773
-            
+      webgateway:
+        replicas: 1
+        alternativeServers: LoadBalancing
+        applicationPaths:
+        - /*
+        ephemeral: true
+        image: containers.intersystems.com/intersystems/webgateway-lockeddown:2025.1
+        loginSecret:
+          name: containers-pull-secret
+        type: apache-lockeddown         
+serviceTemplate:
+  spec:
+   type: LoadBalancer
+   externalTrafficPolicy: Local
