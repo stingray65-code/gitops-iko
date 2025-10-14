@@ -44,3 +44,22 @@ serviceTemplate:
   spec:
    type: LoadBalancer
    externalTrafficPolicy: Local
+---
+apiVersion: v1cert
+data:  
+  ca.pem: ABC...
+  tls.crt: ABC...
+  tls.key: ABC...
+metadata:
+  creationTimestamp: null
+  name: cert-secret
+  namespace: ikoplus
+---
+apiVersion: v1
+data:
+  password: SYS
+  username: CSPSystem
+kind: Secret
+metadata:
+  name: webgateway-secret
+  namespace: ikoplus
