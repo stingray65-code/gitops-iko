@@ -63,3 +63,8 @@ kind: Secret
 metadata:
   name: webgateway-secret
   namespace: ikoplus
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ikoplus
