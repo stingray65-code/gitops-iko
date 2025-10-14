@@ -47,9 +47,9 @@ serviceTemplate:
 ---
 apiVersion: v1cert
 data:  
-  ca.pem: ABC...
-  tls.crt: ABC...
-  tls.key: ABC...
+  ca.pem: ca.pem
+  tls.crt: tls.crt
+  tls.key: tls.key
 metadata:
   creationTimestamp: null
   name: cert-secret
