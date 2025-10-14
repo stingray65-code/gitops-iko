@@ -38,7 +38,7 @@ spec:
         ephemeral: true
         image: containers.intersystems.com/intersystems/webgateway-lockeddown:2025.1
         loginSecret:
-          name: containers-pull-secret
+          name:
         type: apache-lockeddown         
 serviceTemplate:
   spec:
