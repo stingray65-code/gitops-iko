@@ -1,0 +1,46 @@
+apiVersion: intersystems.com/v1alpha1
+kind: IrisCluster
+metadata:
+  name: mirror-seed
+  namespace: ikoplus
+spec:
+  imagePullSecrets:
+  - name:   containers-pull-secret
+  licenseKeySecret:
+    name: license-key-secret
+  tls:
+    common:
+      secret:
+        secretName: cert-secret
+  topology:
+    arbiter:
+      image: containers.intersystems.com/intersystems/arbiter:2025.1
+    data:
+      compatibilityVersion: 2025.1.0
+      image: containers.intersystems.com/intersystems/irishealth:2025.1
+      mirrorMap: primary,backup
+      mirrored: true
+      preferredZones:
+        - master
+        - worker
+      podTemplate:
+        spec:
+          securityContext:
+            fsGroup: 51773
+            runAsGroup: 51773
+            runAsNonRoot: true
+            runAsUser: 51773
+      webgateway:
+        replicas: 1
+        alternativeServers: LoadBalancing
+        applicationPaths:
+        - /*
+        ephemeral: true
+        image: containers.intersystems.com/intersystems/webgateway-lockeddown:2025.1
+        loginSecret:
+          name: webgateway-secret
+        type: apache-lockeddown
+  serviceTemplate:
+    spec:
+      type: LoadBalancer
+      externalTrafficPolicy: Local
