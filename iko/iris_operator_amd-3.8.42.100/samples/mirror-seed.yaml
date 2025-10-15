@@ -47,9 +47,9 @@ serviceTemplate:
 ---
 apiVersion: v1cert
 data:  
-  ca.pem: ca.pem
-  tls.crt: tls.crt
-  tls.key: tls.key
+  ca.pem: /home/sray/certs-tls/ca.pem
+  tls.crt: /home/sray/certs-tls/tls.crt
+  tls.key: /home/sray/certs-tls/tls.key
 metadata:
   creationTimestamp: null
   name: cert-secret
