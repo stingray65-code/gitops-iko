@@ -54,6 +54,7 @@ metadata:
   creationTimestamp: null
   name: cert-secret
   namespace: ikoplus
+type: kubernetes.io/tls
 ---
 apiVersion: v1
 data:
