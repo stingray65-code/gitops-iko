@@ -46,10 +46,11 @@ spec:
     externalTrafficPolicy: Local
 ---
 apiVersion: v1cert
-data:  
+data:
   ca.pem: /home/sray/certs-tls/ca.pem
   tls.crt: /home/sray/certs-tls/tls.crt
   tls.key: /home/sray/certs-tls/tls.key
+kind: Secret
 metadata:
   creationTimestamp: null
   name: cert-secret
