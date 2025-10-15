@@ -4,7 +4,7 @@ metadata:
   name: gitops-iko-seed
   namespace: argocd
   labels:
-    isAppOfApps: 'false'
+    isAppOfApps: 'true'
 spec:
   destination:
     namespace: isc
