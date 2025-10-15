@@ -45,7 +45,7 @@ spec:
     type: LoadBalancer
     externalTrafficPolicy: Local
 ---
-apiVersion: v1cert
+apiVersion: v1
 data:  
   ca.pem: /home/sray/certs-tls/ca.pem
   tls.crt: /home/sray/certs-tls/tls.crt
