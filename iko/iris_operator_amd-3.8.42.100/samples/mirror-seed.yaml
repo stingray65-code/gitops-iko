@@ -58,8 +58,8 @@ metadata:
 ---
 apiVersion: v1
 data:
-  password: SYS
-  username: CSPSystem
+  password: U1lTCg==
+  username: Q1NQU3lzdGVtCg==
 kind: Secret
 metadata:
   name: webgateway-secret
