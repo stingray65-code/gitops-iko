@@ -46,15 +46,12 @@ spec:
     externalTrafficPolicy: Local
 ---
 apiVersion: v1
-data:
-  ca.pem: /home/sray/certs-tls/ca.pem
-  tls.crt: /home/sray/certs-tls/tls.crt
-  tls.key: /home/sray/certs-tls/tls.key
 kind: Secret
+data:
+ tls.crt: /home/sray/certs-tls/tls.crt
+ tls.key: /home/sray/certs-tls/tls.key
 metadata:
-  creationTimestamp: null
-  name: cert-secret
-  namespace: ikoplus
+ name: cert-secret
 type: kubernetes.io/tls
 ---
 apiVersion: v1
