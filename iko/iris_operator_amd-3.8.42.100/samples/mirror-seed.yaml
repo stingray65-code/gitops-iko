@@ -65,6 +65,7 @@ kind: Secret
 metadata:
   name: webgateway-secret
   namespace: ikoplus
+type: Opaque
 ---
 apiVersion: v1
 kind: Namespace
