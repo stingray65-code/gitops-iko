@@ -45,7 +45,7 @@ serviceTemplate:
    type: LoadBalancer
    externalTrafficPolicy: Local
 ---
-apiVersion: v1cert
+apiVersion: v1
 kind: Secret
 data:  
   ca.pem: /home/sray/certs-tls/ca.pem
