@@ -40,10 +40,10 @@ spec:
         loginSecret:
           name: webgateway-secret
         type: apache-lockeddown         
-serviceTemplate:
-  spec:
-   type: LoadBalancer
-   externalTrafficPolicy: Local
+  serviceTemplate:
+   spec:
+    type: LoadBalancer
+    externalTrafficPolicy: Local
 ---
 apiVersion: v1
 kind: Secret
