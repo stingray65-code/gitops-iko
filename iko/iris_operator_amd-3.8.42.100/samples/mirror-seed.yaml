@@ -46,6 +46,7 @@ serviceTemplate:
    externalTrafficPolicy: Local
 ---
 apiVersion: v1cert
+kind: Secret
 data:  
   ca.pem: /home/sray/certs-tls/ca.pem
   tls.crt: /home/sray/certs-tls/tls.crt
