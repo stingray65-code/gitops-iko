@@ -50,7 +50,7 @@ data:
   ca.pem: /home/sray/certs-tls/ca.pem
   tls.crt: /home/sray/certs-tls/tls.crt
   tls.key: /home/sray/certs-tls/tls.key
-  metadata:
+metadata:
   creationTimestamp: null
   name: cert-secret
   namespace: ikoplus
