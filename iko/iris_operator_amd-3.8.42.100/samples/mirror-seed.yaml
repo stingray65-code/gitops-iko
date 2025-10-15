@@ -59,8 +59,8 @@ type: kubernetes.io/tls
 ---
 apiVersion: v1
 data:
-  password: U1lTCg==
-  username: Q1NQU3lzdGVtCg==
+  password: U1lT
+  username: Q1NQU3lzdGVt
 kind: Secret
 metadata:
   name: webgateway-secret
