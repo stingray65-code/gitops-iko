@@ -17,7 +17,7 @@ spec:
       image: containers.intersystems.com/intersystems/arbiter:2025.1
     data:
       compatibilityVersion: 2025.1.0
-      image: containers.intersystems.com/intersystems/irishealth:2025.1
+      image: containers.intersystems.com/intersystems/irishealth-community:2025.1
       mirrorMap: primary,backup
       mirrored: true
       preferredZones:
@@ -36,7 +36,7 @@ spec:
         applicationPaths:
         - /*
         ephemeral: true
-        image: containers.intersystems.com/intersystems/webgateway-lockeddown:2025.1
+        image: containers.intersystems.com/intersystems/webgateway:2025.1
         loginSecret:
           name: webgateway-secret
         type: apache-lockeddown         
