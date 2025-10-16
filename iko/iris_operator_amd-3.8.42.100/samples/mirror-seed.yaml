@@ -61,6 +61,7 @@ data:
 kind: Secret
 metadata:
  name: cert-secret
+ namespace: ikoplus
 type: kubernetes.io/tls
 ---
 apiVersion: v1
