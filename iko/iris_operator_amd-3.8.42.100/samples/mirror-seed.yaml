@@ -47,7 +47,9 @@ spec:
 ---
 apiVersion: v1
 data:
-  .dockerconfigjson: UTBWM2pMNnhqSmdNaGFKUGNadWNhenZjQWwzZUtrS1Fya0lSaTFxNFFXTWI=
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJjb250YWluZXJzLmludGVyc3lzdGVtcy5jb20iOiB7CgkJCSJhdXRo
+       IjogImMzSmhlVUJxTW1sdWRHVnlZV04wYVhabExtTnZiVHBSTUZZemFrdzJlR3BLWjAxb1lVcFFZ
+       MXAxWTJGNmRtTkJiRE5sUzJ0TFVYSnJTVkpwTVhFMFVWZE5ZZz09IgoJCX0KCX0KfQ==
 kind: Secret
 metadata:
   name: containers-pull-secret
