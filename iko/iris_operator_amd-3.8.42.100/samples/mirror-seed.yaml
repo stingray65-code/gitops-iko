@@ -47,6 +47,14 @@ spec:
 ---
 apiVersion: v1
 data:
+  iris.key: /home/sray/keys/iris.key
+kind: Secret
+metadata:
+  name: license-key-secret
+  namespace: ikoplus
+---
+apiVersion: v1
+data:
  ca.pem: /home/sray/certs-tls/ca.pem
  tls.crt: /home/sray/certs-tls/tls.crt
  tls.key: /home/sray/certs-tls/tls.key
