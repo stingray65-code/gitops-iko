@@ -58,6 +58,7 @@ data:
  ca.pem: /home/sray/certs-tls/ca.pem
  tls.crt: /home/sray/certs-tls/tls.crt
  tls.key: /home/sray/certs-tls/tls.key
+kind: Secret
 metadata:
  name: cert-secret
 type: kubernetes.io/tls
