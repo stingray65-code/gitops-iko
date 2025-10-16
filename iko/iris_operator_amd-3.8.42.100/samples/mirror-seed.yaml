@@ -47,7 +47,7 @@ spec:
 ---
 apiVersion: v1
 data:
-  iris.key: /home/sray/keys/iris.key
+  iris.key: L2hvbWUvc3JheS9rZXlzL2lyaXMua2V5
 kind: Secret
 metadata:
   name: license-key-secret
