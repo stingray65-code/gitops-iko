@@ -45,6 +45,15 @@ spec:
     type: LoadBalancer
     externalTrafficPolicy: Local
 ---
+apiVersion: v1
+data:
+  .dockerconfigjson: UTBWM2pMNnhqSmdNaGFKUGNadWNhenZjQWwzZUtrS1Fya0lSaTFxNFFXTWI=
+kind: Secret
+metadata:
+  name: containers-pull-secret
+  namespace: ikoplus
+type: kubernetes.io/dockerconfigjson
+---
 apiVersion: v1cert
 data:
  ca.pem: /home/sray/certs-tls/ca.pem
